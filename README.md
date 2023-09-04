@@ -8,3 +8,5 @@ This project is based on the work carried out in the repository [FaztWeb/first-n
 
 We would like to express our gratitude to FaztWeb for providing a valuable resource that served as a reference for our final degree project.
 
+Reference to the model:  JACantoral. (2022). DL_Fundamentals. GitHub Repository. Reference: [https://github.com/JACantoral/DL_fundamentals/blob/main/Fundamentals_DL_UNET_4_video_v2.ipynb]
+
