@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Model</title>
+    <!-- Incluye el encabezado de las páginas parciales -->
+    <%- include('partials/head') %>
+</head>
+<body>
+    <!-- Llamada a la barra de navegación para redirigir y mostrar la interfaz -->
+    <%- include('partials/navigation') %>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <header class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="header-content">
+            <h1>Imágenes Cargadas</h1>
+        </div>
+        <div class="image-gallery">
+            <% if (postprocessedImagePath && imageName) { %>
+                <!-- Mostrar ambas imágenes procesadas y originales -->
+                <div class="image-container">
+                    <!-- Mostrar la imagen procesada -->
+                    <div class="image-box">
+                        <h2>Resultado de la Inferencia</h2>
+                        <img src="/uploads/<%= postprocessedImagePath %>" alt="Resultado de Inferencia" class="image">
+                    </div>
+                    <!-- Mostrar la imagen original -->
+                    <div class="image-box">
+                        <h2>Imagen Original</h2>
+                        <img src="/uploads/<%= imageName %>" alt="Imagen Original" class="image">
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </header>
+    
+    <!-- Incluye el pie de página de las páginas parciales -->
+    <% include('partials/footer') %>
+</body>
+</html>

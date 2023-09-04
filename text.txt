@@ -1,0 +1,4 @@
+Versión funcional, contiene el modelo, es necesario tener nodejs y python instalados en el ordenador en el que se ejecute.
+Una vez instalados se accede al directorio donde se encuentra el proyecto desde la terminal.
+Una vez en el directorio solo es necesario escribir el comando: rpm run dev.
+Posteriormente se debe acceder desde el navegador al siguiente enlace: http://localhost:3001

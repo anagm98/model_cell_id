@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Incluye el encabezado de las páginas parciales -->
+    <%- include('partials/head') %>
+</head>
+<body>
+    <!-- Llama a la barra de navegación para redirigir y mostrar la interfaz -->
+    <%- include('partials/navigation') %>
+    
+    <!-- Contenedor principal -->
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <!-- Tarjeta de contacto -->
+        <div class="card bg-dark text-white text-center">
+            <div class="card-header">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="card-body text-left">
+                <!-- Formulario de contacto -->
+                <form>
+                    <!-- Campo de correo electrónico -->
+                    <div class="mb-3">
+                        <label for="email">E-mail: </label>
+                        <input type="email" placeholder="E-mail" class="form-control">
+                    </div>
+
+                    <!-- Campo de mensaje -->
+                    <div class="mb-3">
+                        <label for="message">Message: </label>
+                        <textarea name="message" cols="30" rows="4" class="form-control" placeholder="Write here your message"></textarea>
+                    </div>
+                    
+                    <!-- Botón para enviar el formulario -->
+                    <div class="mb-3">
+                        <button class="btn btn-custom-primary btn-block">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Incluye el pie de página de las páginas parciales -->
+    <%- include('partials/footer') %>
+</body>
+</html>
